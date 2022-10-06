@@ -14,7 +14,7 @@ public class Book {
 	}
 
 	public boolean createNewParagraph(String paragraph) {
-		return this.images.add(paragraph);
+		return this.paragraphs.add(paragraph);
 		
 	}
 
