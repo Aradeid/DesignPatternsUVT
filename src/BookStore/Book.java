@@ -5,43 +5,33 @@ import java.util.List;
 
 public class Book {
 	private String title;
-	private List<String> images = new ArrayList<>();
-	private List<String> paragraphs = new ArrayList<>();
-	private List<String> tables = new ArrayList<>();
+	private List<Author> authors = new ArrayList<>();
+	private List<Chapter> chapters = new ArrayList<>();
 
 	public Book(String title) {
 		this.title = title;
 	}
 
-	public boolean createNewParagraph(String paragraph) {
-		return this.paragraphs.add(paragraph);
-		
+	public void addAuthor(Author author) {
+		this.authors.add(author); 
 	}
 
-	public boolean createNewImage(String image) {
-		return this.images.add(image);
+	public int createChapter(String title) {
+		chapters.add(new Chapter(title));
+		return chapters.size() - 1;
 	}
 
-	public boolean createNewTable(String table) {
-		return this.tables.add(table);
-		
+	public Chapter getChapter(int index) {
+		return chapters.get(index);
 	}
 
 	public void print() {
 		System.out.println("Title: " + title);
-		System.out.println("Paragraphs:");
-		for(String p : paragraphs) {
-			System.out.println(p);
+		for (Author a : authors) {
+			a.print();
 		}
-		
-		System.out.println("Images:");
-		for(String im : images) {
-			System.out.println(im);
-		}
-		
-		System.out.println("Tables:");
-		for(String t : tables) {
-			System.out.println(t);
+		for (Chapter c : chapters) {
+			c.print();
 		}
 	}
 }
