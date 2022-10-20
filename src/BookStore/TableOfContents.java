@@ -1,6 +1,6 @@
 package BookStore;
 
-public class TableOfCntents {
+public class TableOfContents {
     public void print() {
         
     }
