@@ -1,17 +1,23 @@
 package BookStore;
 
-public class Table implements Element {
-    private String title;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Table(String title) {
+public class Section implements Element {
+    List children;
+    String title;
+
+    public Section(String title) {
         this.title = title;
+        this.children = new ArrayList<>();
     }
 
     @Override
     public void print() {
-        System.out.println("Table with Title: " + title);        
+        // TODO Auto-generated method stub
+        
     }
-
+    
     @Override
     public void add(Element e) {
         // TODO Auto-generated method stub

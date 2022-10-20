@@ -3,26 +3,17 @@ package BookStore;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book {
+public class Book extends Section {
 	private String title;
 	private List<Author> authors = new ArrayList<>();
-	private List<Chapter> chapters = new ArrayList<>();
+	private List<Element> children = new ArrayList<>();
 
 	public Book(String title) {
-		this.title = title;
+		super(title);
 	}
 
 	public void addAuthor(Author author) {
 		this.authors.add(author); 
-	}
-
-	public int createChapter(String title) {
-		chapters.add(new Chapter(title));
-		return chapters.size() - 1;
-	}
-
-	public Chapter getChapter(int index) {
-		return chapters.get(index);
 	}
 
 	public void print() {
@@ -30,7 +21,7 @@ public class Book {
 		for (Author a : authors) {
 			a.print();
 		}
-		for (Chapter c : chapters) {
+		for (Element c : children) {
 			c.print();
 		}
 	}
