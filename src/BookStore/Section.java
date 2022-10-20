@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Section implements Element {
-    List children;
+    List<Element> children;
     String title;
 
     public Section(String title) {

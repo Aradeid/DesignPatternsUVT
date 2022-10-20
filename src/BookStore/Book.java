@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Book extends Section {
-	private String title;
 	private List<Author> authors = new ArrayList<>();
 	private List<Element> children = new ArrayList<>();
 
