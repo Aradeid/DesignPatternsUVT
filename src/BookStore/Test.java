@@ -1,8 +1,6 @@
 package BookStore;
 
-import BookStore.Book;
-
-public class main {
+public class Test {
 	public static void main(String[] args) {
 		// Book noapteBuna = new Book("Noapte buna, copii!");
 		// Author rpGheo = new Author("Radu Pavel Gheo");
