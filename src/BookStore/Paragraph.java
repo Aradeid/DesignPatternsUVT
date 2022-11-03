@@ -1,15 +1,23 @@
 package BookStore;
 
+import BookStore.AlignStrategies.AlignLeft;
+import BookStore.AlignStrategies.AlignStrategy;
+
 public class Paragraph implements Element {
     private String text;
+    private AlignStrategy textAlignment = new AlignLeft();
 
     public Paragraph(String text) {
         this.text = text;
     }
 
+    public String getText() {
+        return text;
+    }
+
     @Override
     public void print() {
-        System.out.println("Paragrapg: " + text);        
+        textAlignment.render(text);     
     }
 
     @Override
