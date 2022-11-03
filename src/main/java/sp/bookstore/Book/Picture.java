@@ -1,6 +1,6 @@
-package BookStore;
+package sp.bookstore.Book;
 
-import java.awt.Dimension;
+import java.awt.*;
 
 public interface Picture {
     public String url();

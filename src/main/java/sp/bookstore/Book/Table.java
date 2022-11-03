@@ -1,4 +1,4 @@
-package BookStore;
+package sp.bookstore.Book;
 
 public class Table implements Element {
     private String title;
