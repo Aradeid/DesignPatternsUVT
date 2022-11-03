@@ -14,25 +14,25 @@ public class Section implements Element {
 
     @Override
     public void print() {
-        // TODO Auto-generated method stub
-        
+        System.out.println(title);
+        for(Element i : children) {
+            i.print();
+        }
     }
     
     @Override
     public void add(Element e) {
-        // TODO Auto-generated method stub
-        
+        children.add(e);
     }
 
     @Override
     public void remove(Element e) {
-        // TODO Auto-generated method stub
+        children.remove(e);
         
     }
 
     @Override
     public Element get(int index) {
-        // TODO Auto-generated method stub
-        return null;
+        return children.get(index);
     }
 }

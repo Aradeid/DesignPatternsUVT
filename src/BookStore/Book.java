@@ -15,6 +15,10 @@ public class Book extends Section {
 		this.authors.add(author); 
 	}
 
+	public void addContent(Element e) {
+		super.add(e);
+	}
+
 	public void print() {
 		System.out.println("Title: " + title);
 		for (Author a : authors) {
