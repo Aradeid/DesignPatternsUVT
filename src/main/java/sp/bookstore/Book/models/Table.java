@@ -1,5 +1,7 @@
 package sp.bookstore.Book.models;
 
+import sp.bookstore.Book.servies.Visitor;
+
 public class Table implements Element {
     private String title;
 
@@ -28,5 +30,10 @@ public class Table implements Element {
     public Element get(int index) {
         // TODO Auto-generated method stub
         return null;
+    }
+
+    @Override
+    public void accept(Visitor v) {
+        v.visitTable(this);
     }
 }

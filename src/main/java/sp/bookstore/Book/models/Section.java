@@ -3,6 +3,8 @@ package sp.bookstore.Book.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import sp.bookstore.Book.servies.Visitor;
+
 public class Section implements Element {
     List<Element> children;
     String title;
@@ -34,5 +36,10 @@ public class Section implements Element {
     @Override
     public Element get(int index) {
         return children.get(index);
+    }
+
+    @Override
+    public void accept(Visitor v) {
+        v.visitSection(this);
     }
 }

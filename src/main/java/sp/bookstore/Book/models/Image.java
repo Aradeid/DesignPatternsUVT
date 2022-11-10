@@ -1,5 +1,7 @@
 package sp.bookstore.Book.models;
 
+import sp.bookstore.Book.servies.Visitor;
+
 public class Image implements Element {
     private String url;
 
@@ -28,6 +30,11 @@ public class Image implements Element {
     public Element get(int index) {
         // TODO Auto-generated method stub
         return null;
+    }
+
+    @Override
+    public void accept(Visitor v) {
+        v.visitImage(this);
     }
     
 }

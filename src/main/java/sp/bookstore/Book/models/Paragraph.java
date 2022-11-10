@@ -2,6 +2,7 @@ package sp.bookstore.Book.models;
 
 import sp.bookstore.Book.servies.AlignLeft;
 import sp.bookstore.Book.servies.AlignStrategy;
+import sp.bookstore.Book.servies.Visitor;
 
 public class Paragraph implements Element {
     private String text;
@@ -36,5 +37,10 @@ public class Paragraph implements Element {
     public Element get(int index) {
         // TODO Auto-generated method stub
         return null;
+    }
+
+    @Override
+    public void accept(Visitor v) {
+        v.visitParagraph(this);
     }
 }
