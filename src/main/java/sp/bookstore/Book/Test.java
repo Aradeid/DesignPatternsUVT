@@ -1,6 +1,7 @@
 package sp.bookstore.Book;
 
 import sp.bookstore.Book.models.*;
+import sp.bookstore.Book.servies.AlignRight;
 import sp.bookstore.Book.servies.BookStatistics;
 
 public class Test {
@@ -19,6 +20,7 @@ public class Test {
 		cap1.add(new Paragraph("Some text"));
 		cap1.add(new Table("Table 1"));
 		BookStatistics stats = new BookStatistics();
+		stats.setAlignStrategy(new AlignRight());
 		cap1.accept(stats);
 		stats.print();
 	}
