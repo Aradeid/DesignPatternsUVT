@@ -1,15 +1,15 @@
-package sp.bookstore.Book;
+package sp.bookstore.Book.models;
 
-public class Image implements Element {
-    private String url;
+public class Table implements Element {
+    private String title;
 
-    public Image(String url) {
-        this.url = url;
+    public Table(String title) {
+        this.title = title;
     }
 
     @Override
     public void print() {
-        System.out.println("Image with Name: " + url);        
+        System.out.println("Table with Title: " + title);        
     }
 
     @Override
@@ -29,5 +29,4 @@ public class Image implements Element {
         // TODO Auto-generated method stub
         return null;
     }
-    
 }

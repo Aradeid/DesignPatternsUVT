@@ -1,7 +1,7 @@
-package sp.bookstore.Book;
+package sp.bookstore.Book.models;
 
-import sp.bookstore.Book.AlignStrategies.AlignLeft;
-import sp.bookstore.Book.AlignStrategies.AlignStrategy;
+import sp.bookstore.Book.servies.AlignLeft;
+import sp.bookstore.Book.servies.AlignStrategy;
 
 public class Paragraph implements Element {
     private String text;

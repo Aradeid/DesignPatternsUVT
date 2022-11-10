@@ -3,6 +3,8 @@ package sp.bookstore.Book;
 import java.util.ArrayList;
 import java.util.List;
 
+import sp.bookstore.Book.models.Element;
+
 public abstract class AbstractElement implements Element {
     List<AbstractElement> children;
     public AbstractElement() {

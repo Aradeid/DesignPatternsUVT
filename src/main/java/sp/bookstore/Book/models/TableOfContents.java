@@ -1,17 +1,13 @@
-package sp.bookstore.Book;
+package sp.bookstore.Book.models;
 
-public class Table implements Element {
-    private String title;
-
-    public Table(String title) {
-        this.title = title;
-    }
+public class TableOfContents implements Element {
 
     @Override
     public void print() {
-        System.out.println("Table with Title: " + title);        
+        // TODO Auto-generated method stub
+        
     }
-
+    
     @Override
     public void add(Element e) {
         // TODO Auto-generated method stub

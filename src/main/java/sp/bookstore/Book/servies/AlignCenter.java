@@ -1,4 +1,4 @@
-package sp.bookstore.Book.AlignStrategies;
+package sp.bookstore.Book.servies;
 
 public class AlignCenter implements AlignStrategy {
 

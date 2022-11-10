@@ -1,4 +1,4 @@
-package sp.bookstore.Book;
+package sp.bookstore.Book.models;
 
 public interface Element {
     public void print();

@@ -1,13 +1,17 @@
-package sp.bookstore.Book;
+package sp.bookstore.Book.models;
 
-public class TableOfContents implements Element {
+public class Image implements Element {
+    private String url;
+
+    public Image(String url) {
+        this.url = url;
+    }
 
     @Override
     public void print() {
-        // TODO Auto-generated method stub
-        
+        System.out.println("Image with Name: " + url);        
     }
-    
+
     @Override
     public void add(Element e) {
         // TODO Auto-generated method stub
@@ -25,4 +29,5 @@ public class TableOfContents implements Element {
         // TODO Auto-generated method stub
         return null;
     }
+    
 }

@@ -1,4 +1,4 @@
-package sp.bookstore.Book;
+package sp.bookstore.Book.models;
 
 import java.util.ArrayList;
 import java.util.List;

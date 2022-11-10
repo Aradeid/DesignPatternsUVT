@@ -1,4 +1,4 @@
-package sp.bookstore.Book;
+package sp.bookstore.Book.models;
 
 public class Author {
     private String name;
