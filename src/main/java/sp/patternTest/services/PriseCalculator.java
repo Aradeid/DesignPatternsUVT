@@ -47,5 +47,12 @@ public class PriseCalculator implements DishVisitor {
     public int getTotalCost() {
         return totalCosts;
     }
+
+    public void print() {
+        System.out.println("Salad costs = " + saladCosts);
+        System.out.println("Pizza costs = " + pizzaCosts);
+        System.out.println("Pasta costs = " + pastaCosts);
+        System.out.println("Total costs = " + totalCosts);
+    }
     
 }
