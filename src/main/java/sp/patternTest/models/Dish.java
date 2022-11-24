@@ -4,6 +4,6 @@ import sp.patternTest.services.DishVisitor;
 
 public interface Dish {
     public String getName();
-    public String getPrise();
+    public int getPrise();
     public void addVisitor(DishVisitor v);
 }

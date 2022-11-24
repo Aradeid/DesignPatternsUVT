@@ -11,9 +11,9 @@ public class Salad implements Dish {
     }
 
     @Override
-    public String getPrise() {
+    public int getPrise() {
         // TODO Auto-generated method stub
-        return null;
+        return 0;
     }
 
     @Override
