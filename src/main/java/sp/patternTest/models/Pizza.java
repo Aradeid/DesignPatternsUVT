@@ -2,18 +2,9 @@ package sp.patternTest.models;
 
 import sp.patternTest.services.DishVisitor;
 
-public class Pizza implements Dish {
-
-    @Override
-    public String getName() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public int getPrise() {
-        // TODO Auto-generated method stub
-        return 0;
+public class Pizza extends AbstractDish {
+    public Pizza(String name, int prise) {
+        super(name, prise);
     }
 
     @Override

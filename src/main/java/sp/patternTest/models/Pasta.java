@@ -2,18 +2,10 @@ package sp.patternTest.models;
 
 import sp.patternTest.services.DishVisitor;
 
-public class Pasta implements Dish {
+public class Pasta extends AbstractDish {
 
-    @Override
-    public String getName() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public int getPrise() {
-        // TODO Auto-generated method stub
-        return 0;
+    public Pasta(String name, int prise) {
+        super(name, prise);
     }
 
     @Override
