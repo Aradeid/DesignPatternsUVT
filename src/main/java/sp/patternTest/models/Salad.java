@@ -18,8 +18,7 @@ public class Salad implements Dish {
 
     @Override
     public void addVisitor(DishVisitor v) {
-        // TODO Auto-generated method stub
-        
+        v.visitSalad(this);
     }
     
 }
